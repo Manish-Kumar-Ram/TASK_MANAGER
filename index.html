@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+
+<div class="container">
+     <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search tasks...">
+    </div>
+
+    <header>
+        <h1>Task Manager</h1>
+        <button id="theme-toggle">
+            <i class="ri-moon-line moon-icon"></i>
+            <i class="ri-sun-line sun-icon"></i>
+        </button>
+    </header>
+
+    <div class="input-section">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-task-btn">Add</button>
+    </div>
+
+   
+    <div class="task-list" id="task-list">
+        <div class="task-card">
+            <div class="task-info">
+                <input type="checkbox">
+                <span>Complete Project Report</span>
+            </div>
+            <div class="actions">
+                <button class="edit"><i class="ri-pencil-line"></i></button>
+                <button class="delete"><i class="ri-delete-bin-line"></i></button>
+            </div>
+        </div>
+        </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
