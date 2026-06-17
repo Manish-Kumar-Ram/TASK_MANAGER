@@ -52,7 +52,7 @@ addTaskBtn.addEventListener("click", () => {
 
 conatiner.addEventListener("click", (e) => {
     
-    // Yahan .closest() use karo taaki icon par click ho toh bhi button mile
+    
     if (e.target.closest('.delete')) {
         const index = e.target.closest('.task-card').dataset.index;
         taksarr.splice(index, 1);
@@ -60,7 +60,8 @@ conatiner.addEventListener("click", (e) => {
         saveTasks();
     }
 
-    // Yahan bhi .closest() use karo
+
+
     if (e.target.closest('.edit')) {
         const index = e.target.closest('.task-card').dataset.index;
         const newText = prompt("Edit Task:", taksarr[index].text);
